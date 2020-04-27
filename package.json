@@ -23,8 +23,7 @@
     "dev": "node vue-router/server.js"
   },
   "gitHooks": {
-    "pre-commit": "lint-staged",
-    "commit-msg": "node scripts/verifyCommitMsg.js"
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.{js,vue}": [
