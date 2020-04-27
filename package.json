@@ -22,9 +22,6 @@
   "scripts": {
     "dev": "node vue-router/server.js"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
   "lint-staged": {
     "*.{js,vue}": [
       "eslint --fix",

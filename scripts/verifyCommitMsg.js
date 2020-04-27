@@ -1,6 +1,9 @@
 // "gitHooks": {
 //  "commit-msg": "node scripts/verifyCommitMsg.js"
 // }
+// "gitHooks": {
+//   "pre-commit": "lint-staged"
+// },
 
 const chalk = require('chalk')  // eslint-disable-line
 const msgPath = process.env.GIT_PARAMS
