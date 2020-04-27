@@ -5,11 +5,26 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/about-nest/project">About-project</router-link> |
       <router-link to="/about-nest/projects/images">About-project-images</router-link>
+      <!-- <button @click="go('/')">Home</button> |
+      <button @click="go('/about')">About</button> |
+      <button @click="go('/about-nest/project')">About-project</button> |
+      <button @click="go('/about-nest/projects/images')">About-project-images</button> -->
     </div>
     <router-view/>
   </div>
 </template>
-
+<script>
+export default {
+  name: 'App',
+  methods: {
+    go (link) {
+      this.$router.push({
+        path: link
+      })
+    }
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
